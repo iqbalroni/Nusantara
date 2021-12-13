@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.bg-green {
+    background-color: #5ab886;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #ffffff;
+}
+
+.hp {
+    width: 1000px;
+}
+
+.hp:hover {
+    animation: ignielShake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px
+}
+
+@keyframes ignielShake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0)
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0)
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0)
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0)
+    }
+}
+
+@-webkit-keyframes ignielShake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0)
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0)
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0)
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0)
+    }
+}
+
+.btn-putih {
+    background-color: #ffffff;
+    color: #5ab886;
+    border: 3px solid #ffffff;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-putih:hover {
+    transform: scale(1.1);
+    border: 3px solid #ffffff;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+.btn-hijau {
+    background-color: #5ab886;
+    color: #ffffff;
+    border: 3px solid #5ab886;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-hijau:hover {
+    transform: scale(1.1);
+    border: 3px solid #5ab886;
+    background-color: transparent;
+    color: #5ab886;
+}
+
+.jumbotron {
+    height: 100vh;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.home .jumbotron {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    color: #ffffff;
+}
+
+.home h3 {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+.home h1 {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.feature .jumbotron {
+    background-color: #f0f0f0;
+}
+
+.feature h2 {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    color: #303030;
+}
+
+.feature h3 {
+    font-size: 23px;
+    padding: 0;
+    font-weight: 300;
+    margin: 0;
+    color: #303030;
+}
+
+.feature .card {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 0;
+    color: #303030;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.feature .card:hover {
+    transform: scale(1.1);
+}
+
+.feature .card-title i {
+    font-size: 50px;
+    color: #5ab886;
+}
+
+.about .jumbotron {
+    background-color: #f0f0f0;
+}
+
+.about .list .tempat {
+    display: flex;
+    align-items: center;
+}
+
+.about .list .box {
+    padding: 23px;
+    width: 0;
+    height: 0;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background-color: #5ab886;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.sticky {
+    transition: ease-in-out 0.5s;
+    background-color: #5ab886;
+}
+
+@media only screen and (max-width: 600px) {
+    .home .jumbotron {
+        width: 100%;
+        height: 100vh;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .jumbotron {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+
+    .feature .card {
+        margin-bottom: 30px;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+    }
+}
